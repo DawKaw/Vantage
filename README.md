@@ -10,7 +10,7 @@ For buld on linux you need:
   - cmake
   - optionaly QTCreator
   
-  For QTCreator just open file CMakeLists.txt, configure and play
+  For QTCreator just open file CMakeLists.txt, configure and play.
   For CMake type:
     cmake .
     make
