@@ -16,10 +16,9 @@ For CMake type:
 #cmake .
 #make
 ````  
-First run just type:
-  ./Vantage -a 192.168.0.127
+First run just type:````./Vantage -a 192.168.0.127````
     
-  Of course ip address is the address of your weather station.
+Of course ip address is the address of your weather station.
   After correct connection you can see: 
  ```bash
 #./Vantage -a 192.168.0.127
@@ -53,7 +52,7 @@ Example:
  ```` 
  
 ### Useful script
-This example simple bash script gets data from weather station end push into your http server as GET request.
+This simple bash example script gets data from weather station and push into your http server as GET request.
 ```bash
 #!/bin/bash
 
@@ -138,3 +137,4 @@ curl -s "$get">/dev/null
 ````
 
 This script can run from **crone** on every 5 minutes, for instatnce: ````*/5 * * * * /usr/local/bin/weather.sh````
+Don't forget to grant permission of script for execute.
