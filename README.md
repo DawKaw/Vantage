@@ -137,4 +137,4 @@ curl -s "$get">/dev/null
 ````
 
 This script can run from **crone** on every 5 minutes, for instatnce: ````*/5 * * * * /usr/local/bin/weather.sh````
-Don't forget to grant permission of script for execute.
+<br>Don't forget grant the script permission for execute.
