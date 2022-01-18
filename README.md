@@ -16,7 +16,8 @@ For CMake type:
 #cmake .
 #make
 ````  
-First run just type:````./Vantage -a 192.168.0.127````
+Copy binary file "Vantage" into for example /usr/local/bin/<br>
+First run just type:````Vantage -a 192.168.0.127````
     
 Of course ip address is the address of your weather station.
   After correct connection you can see: 
@@ -42,13 +43,13 @@ time_of_sunset 16:21
 
 #### Other options:
 ```bash
-Usage: ./Vantage -a address [ -p port, -i]
+Usage: Vantage -a address [ -p port, -i]
     [-a] device host name or ip address
     [-p] device ip port (default 22222)
     [-i] imperial units
 Example:
-  ./Vantage -a 192.168.0.127
-  ./Vantage -a 192.168.0.127 -p 22222 -i
+  Vantage -a 192.168.0.127
+  Vantage -a 192.168.0.127 -p 22222 -i
  ```` 
  
 ### Useful script
@@ -59,14 +60,14 @@ This simple bash example script gets data from weather station and push into you
 ip="192.168.0.127"
 
 #Get data from weather station (3x try)
-myvar=`/usr/local/bin/vantage -a $ip 2>/dev/null`
+myvar=`/usr/local/bin/Vantage -a $ip 2>/dev/null`
 
 if [ $? -ne 0 ]; then
     sleep 5
-    myvar=`/usr/local/bin/vantage -a $ip 2>/dev/null`
+    myvar=`/usr/local/bin/Vantage -a $ip 2>/dev/null`
     if [ $? -ne 0 ]; then
         sleep 5
-        myvar=`/usr/local/bin/vantage -a $ip`
+        myvar=`/usr/local/bin/Vantage -a $ip`
         if [ $? -ne 0 ]; then
             exit 1
         fi
