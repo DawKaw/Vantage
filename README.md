@@ -1,26 +1,27 @@
-**Vantage**
+# Vantage
 
-Davis Vantage VUE Weather Station direct connection
+### Davis Vantage VUE Weather Station direct connection
 
 This program allows you to download data direct from your Davis Vantage weather station via local network. This program is helpful when we need to create a shell script that is to forward the data to, for example, some database.
 The program was tested on Davis Vantage VUE device with ethernet module inserted into base station.
 
-For buld on linux you need:
-  - build_essential
-  - cmake
-  - optionaly QTCreator
+For build on linux you need:
+- build_essential
+- cmake
+- optionaly QTCreator
   
-  For QTCreator just open file CMakeLists.txt, configure and play.
-  For CMake type:
-    cmake .
-    make
-  
-  First run just type:
-    ./Vantage -a 192.168.0.127
+For QTCreator just open file CMakeLists.txt, configure and click play.<br>
+For CMake type:
+```bash
+#cmake .
+#make
+````  
+First run just type:
+  ./Vantage -a 192.168.0.127
     
   Of course ip address is the address of your weather station.
   After correct connection you can see: 
- ````
+ ```bash
 #./Vantage -a 192.168.0.127
 outside_temperature 0.9
 outside_humidity 52
@@ -39,3 +40,14 @@ forecast_icone 8
 time_of_sunrise 7:49
 time_of_sunset 16:21
 ````
+
+Other options:
+```bash
+Usage: ./Vantage -a address [ -p port, -i]
+    [-a] device host name or ip address
+    [-p] device ip port (default 22222)
+    [-i] imperial units
+Example:
+  ./Vantage -a 192.168.0.127
+  ./Vantage -a 192.168.0.127 -p 22222 -i
+ ```` 
