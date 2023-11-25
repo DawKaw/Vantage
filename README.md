@@ -2,8 +2,9 @@
 
 ### Davis Vantage VUE Weather Station direct connection
 
-This program allows you to download data direct from your Davis Vantage weather station via local network. This program is helpful when we need to create a shell script that is to forward the data to, for example, some database.
-The program was tested on Davis Vantage VUE device with ethernet module inserted into base station.
+This program allows you to download data direct from your Davis Vantage weather station via local network (network (ethertnet) module needed).  This program is helpful when we need to create a shell script that is to forward the data to, for example, some database.
+The program was tested on Davis Vantage VUE device with ethernet module inserted into base station.<br>
+![davisVantageVue](https://github.com/DawKaw/Vantage/assets/97156574/6145236c-7a65-4ddd-879f-7e1cf6f86bb0)
 
 For build on linux you need:
 - build_essential
